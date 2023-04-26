@@ -28,7 +28,7 @@ The edge runtime can be divided into two runtimes with different purposes.
 ## How to run locally
 To serve all functions in the examples folder on port 9000, you can do this with the [example main service](./examples/main/index.ts) provided with this repo
 ```sh
-./scripts/run.sh start --main-service ./examples/main -p 9000
+./scripts/run.sh -p 9000
 ```
 
 Test by calling the [hello world function](./examples/hello-world/index.ts)
@@ -42,7 +42,7 @@ curl --request POST 'http://localhost:9000/hello-world' \
 
 To run with a different entry point, you can pass a different main service like below
 ```sh
-./run.sh start --main-service /path/to/main-service-directory -p 9000
+./scripts/run.sh --main-service /path/to/main-service-directory -p 9000
 ```
 
 using Docker:
